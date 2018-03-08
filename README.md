@@ -18,6 +18,8 @@ cd into the project folder
 ```
 npm install
 ```
+save you pre-compressed images in the 'images_src' folder
+
 Initialise Grunt for image compression
 ```
 grunt
