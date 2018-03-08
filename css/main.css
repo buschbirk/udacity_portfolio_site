@@ -65,7 +65,7 @@ a {
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 3em;
-  margin: 0.5em 0.1em 0em;
+  margin: 0.5em 0.1em 0;
   display: inline-block;
 }
 
@@ -73,14 +73,14 @@ a {
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 1.5em;
-  margin: 0em 0.1em 0.5em;
+  margin: 0 0.1em 0.5em;
   display: block;
 }
 
 .main_image {
   width: 100%;
   max-width: 850px;
-  margin: 1.5em 0em 1.5em 0em;
+  margin: 1.5em 0 1.5em 0;
 }
 
 .featured_work {
@@ -107,9 +107,9 @@ a {
 
 /* Adding light blue shadow to images when hovering */
 .work_image:hover {
-  -webkit-box-shadow: 1px 0px 25px -6px #02b3e4;
-  -moz-box-shadow: 1px 0px 25px -6px #02b3e4;
-  box-shadow: 1px 0px 25px -6px #02b3e4;
+  -webkit-box-shadow: 1px 0 25px -6px #02b3e4;
+  -moz-box-shadow: 1px 0 25px -6px #02b3e4;
+  box-shadow: 1px 0 25px -6px #02b3e4;
 }
 
 .project_title {
