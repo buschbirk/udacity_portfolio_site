@@ -14,12 +14,12 @@ If you want to use the code for your own portfolio site:
 
 ### Installing
 
-cd into the project folder
+Save you pre-compressed images in the 'images_src' folder
+
+Cd into the project folder
 ```
 npm install
 ```
-save you pre-compressed images in the 'images_src' folder
-
 Initialise Grunt for image compression
 ```
 grunt
