@@ -1,0 +1,14 @@
+/* Change tile width and padding for large mobile and tablet sizes */
+/* One work tile should wrap to the next line in this size range */
+@media screen and (min-width: 500px) and (max-width: 799px) {
+          h2 {padding-left: 2%;}
+          .work_tile {width: 46%; padding: 2%;}
+}
+
+/* Change font size in header to adapt header size to mobile */
+/* Change work tile width to 100% for small screens */
+@media screen and (min-width: 0px) and (max-width: 499px) {
+          h2 {padding-left: 2%;}
+          .header {font-size: 10px;}
+          .work_tile {width: 100%;}
+}

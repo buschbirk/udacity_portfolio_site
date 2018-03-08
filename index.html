@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <img class="header__logo" src="images/udacity.svg" alt="Udacity logo">
+      <div class="header__credentials">
+        <h1 class="header__name">LASSE ALSBIRK</h1>
+        <h3 class="header__role">Full-stack apprentice</h3>
+      </div>
+    </header>
+
+    <hr class="devider">
+
+    <section class="content">
+      <!-- Picture found here:
+      https://medium.com/@gracejia/what-is-a-full-stack-designer-in-2017-will-you-be-one-c988abb07786
+      -->
+      <picture class="main_image">
+        <source
+          media="(min-width: 800px)"
+          srcset="images/full-stack-large_1x.jpg 1x, images/full-stack-large_2x.jpg 2x,">
+        <source
+          media="(min-width: 500px)"
+          srcset="images/images/full-stack-medium_1x.jpg 1x, images/full-stack-medium_2x.jpg 2x,">
+        <img class="main_image" src="images/full-stack-medium_1x.jpg" alt="A full-stack developer">
+      </picture>
+
+      <h2>Featured Work</h2>
+
+      <!-- Adding three project tiles wrapped in a section -->
+      <section class="featured_work">
+        <div class="work_tile">
+          <picture>
+            <!-- small image versions are used for 800px+ viewports
+            because three images are on the same line -> 800/3 = ~270 px -->
+            <source
+              media="(min-width: 800px)"
+              srcset="images/responsive-blog-small_1x.jpg 1x, images/responsive-blog-small_2x.jpg 2x,">
+            <!-- For mobile screens, the medium size is used (450 and 900 px)
+            because image width is 100 % on viewport width < 500 px -->
+            <source
+              media="(max-width: 500px)"
+              srcset="images/responsive-blog-medium_1x.jpg 1x, images/responsive-blog-medium_2x.jpg 2x,">
+            <img class="work_image" src="images/responsive-blog-medium_1x.jpg" alt="A full-stack developer">
+          </picture>
+          <h2 class="project_title">Responsive blog</h2>
+          <a href="https://goo.gl/sQzrnU"><p>Github</p></a>
+        </div>
+
+        <div class="work_tile">
+          <!-- same logic for responsive image loading is applied here -->
+          <picture>
+            <source
+              media="(min-width: 800px)"
+              srcset="images/movie-site-small_1x.jpg 1x, images/movie-site-small_2x.jpg 2x,">
+            <source
+              media="(max-width: 500px)"
+              srcset="images/movie-site-medium_1x.jpg 1x, images/movie-site-medium_2x.jpg 2x,">
+            <img class="work_image" src="images/movie-site-medium_1x.jpg" alt="A full-stack developer">
+          </picture>
+          <h2 class="project_title">Fresh Tomatoes</h2>
+          <a href="https://goo.gl/SMoCpC"><p>Github</p></a>
+        </div>
+
+        <div class="work_tile">
+          <!-- same logic for responsive image loading is applied here -->
+          <picture>
+            <source
+              media="(min-width: 800px)"
+              srcset="images/brighton-times-small_1x.jpg 1x, images/brighton-times-small_2x.jpg 2x,">
+            <source
+              media="(max-width: 500px)"
+              srcset="images/brighton-times-medium_1x.jpg 1x, images/brighton-times-medium_2x.jpg 2x,">
+            <img class="work_image" src="images/brighton-times-medium_1x.jpg" alt="A full-stack developer">
+          </picture>
+          <h2 class="project_title">Brighton Times</h2>
+          <a href="https://goo.gl/oygsKQ"><p>Github</p></a>
+        </div>
+
+      </section>
+    </section>
+
+    <hr class="devider">
+
+    <footer class="social_links">
+      <a href="https://github.com/buschbirk" class="zocial-github"></a>
+      <a href="mailto:lasse@alsbirk.com" class="zocial-email"></a>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,136 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px;
+  max-width: 850px;
+  margin:0 auto;
+}
+
+h2 {
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  margin: 0em 0.1em 1em;
+  display: block;
+  color: #7d97ad;
+}
+
+header {
+  width: 100%;
+  max-width: 850px;
+  min-height: 8em;
+  text-align: right;
+  margin:0 auto;
+  flex-grow: 1;
+}
+
+hr {
+    height: 10px;
+    max-width: 850px;
+    border: 0;
+    color: #7d97ad;
+    box-shadow: 0 10px 10px -10px #7d97ad inset;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 0.2em;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+.header__logo {
+  float: left;
+  width: 5em;
+  margin: 1.5em;
+  margin-left: 0.5em;
+}
+
+.header__credentials {
+  color: #212121;
+}
+
+.header__name {
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 3em;
+  margin: 0.5em 0.1em 0em;
+  display: inline-block;
+}
+
+.header__role {
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  margin: 0em 0.1em 0.5em;
+  display: block;
+}
+
+.main_image {
+  width: 100%;
+  max-width: 850px;
+  margin: 1.5em 0em 1.5em 0em;
+}
+
+.featured_work {
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.work_tile {
+  float: left;
+  width: calc((100% - 30px)/3);
+  padding-right: 15px;
+  margin-bottom: 1em;
+}
+
+/* Ensuring that the last work_tile element has no right padding */
+.work_tile:last-of-type {
+  padding-right: 0;
+}
+
+.work_image {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+/* Adding light blue shadow to images when hovering */
+.work_image:hover {
+  -webkit-box-shadow: 1px 0px 25px -6px #02b3e4;
+  -moz-box-shadow: 1px 0px 25px -6px #02b3e4;
+  box-shadow: 1px 0px 25px -6px #02b3e4;
+}
+
+.project_title {
+  text-align: center;
+  color: black;
+  margin-bottom: 0.2em;
+}
+
+/* zocial icons used in footer*/
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  float: right;
+  width: 10%;
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+/* Adjust footer width and padding */
+.social_links {
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 3em;
+  margin: auto;
+}
